@@ -8,37 +8,28 @@
  Aryan mishra | Siddharth | Ram Ratan  | Gaurav Singla | Mahesh Kumar
 
 ---
+## Table of Contents
+
+- [Introduction](-#Introduction)
+- [Features](#features)               
+- [Prerequisites](#prerequisites)           
+- [Script Breakdown](#script-breakdown)      
+- [Usage](-#Usage)                 
+- [Supported Java Versions](#supported-java-versions) 
+- [Example](#example)            
+- [Troubleshooting](#troubleshooting)      
+
+---
 ## Introduction
 
 Installing and managing Java environments manually on multiple systems can be time-consuming and error-prone.
 
 This project provides a **lightweight, customizable Bash script** to automate Java installation on Debian/Ubuntu systems. 
 
----
-
-## Objective
-
-To provide a **generic, reusable, and automated Bash script** that simplifies the **installation, configuration, and management** of different Java versions (OpenJDK) on **Linux systems**, with support for:
-- Multiple Java versions (8, 11, 17, etc.)
-- Version-specific installations
-- Automatic environment setup (`JAVA_HOME`, `PATH`)
-- Optional cleanup of older versions
-- Upgrade-safe operations for CI/CD or server provisioning
+To provide a **generic, reusable, and automated Bash script** that simplifies the **installation, configuration, and management** of different Java versions (OpenJDK) on **Linux systems**
 
 ---
 
-##  Table of Contents
-|  Section	            | Description           |
-|-----------------------|-----------------------|
-| Features	            | Key capabilities of the script |
-| Prerequisites	        | Requirements before running the script |
-| Script Breakdown	    |      Key logic and functionality |
-| Usage	|           How to run the script |
-| Supported Java Versions |	Java versions handled |
-| Example |	Example command for installation |
-| Troubleshooting |	Common issues and solutions |
-
----
 ## Features
 - Supports OpenJDK 8, 11, 17+ versions
 
