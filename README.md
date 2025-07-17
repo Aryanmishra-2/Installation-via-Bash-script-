@@ -10,7 +10,7 @@
  ---
 ## Table of Contents
 
-- [Introduction](-#Introduction)
+- [Introduction](#Introduction)
 - [Features](#features)                          
 - [Prerequisites](#prerequisites)                      
 - [Script Breakdown](#script-breakdown)      
