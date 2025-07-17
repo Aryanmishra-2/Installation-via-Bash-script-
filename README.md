@@ -167,11 +167,10 @@ chmod +x install-java.sh
 
  | Name                                                    | Resource                                                             |
  |---------------------------------------------------------|----------------------------------------------------------------------|
- | OpenJDK Installation on Ubuntu (Official Guide)        | https://openjdk.org/install/                                         |
- |   Ubuntu OpenJDK Packages                              | https://packages.ubuntu.com/search?keywords=openjdk)                 |
- |    update-alternatives Command Manual                  | https://man7.org/linux/man-pages/man8/update-alternatives.8.html)    |
- |     Setting JAVA_HOME in Ubuntu                        | https://linuxize.com/post/how-to-set-java-home-on-ubuntu/)           |
- |     Bash Scripting Best Practices                      | https://google.github.io/styleguide/shellguide.html)                 |
+ | OpenJDK Installation on Ubuntu (Official Guide)        | [Link](https://openjdk.org/install/)                                        |
+ |   Ubuntu OpenJDK Packages                              | [Link](https://packages.ubuntu.com/search?keywords=openjdk)                 |
+ |    update-alternatives Command Manual                  | [Link](https://man7.org/linux/man-pages/man8/update-alternatives.8.html)    |          
+ |     Bash Scripting Best Practices                  |  [Link](https://google.github.io/styleguide/shellguide.html)|
   
 
 
