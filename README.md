@@ -171,6 +171,14 @@ echo "[DONE] Java $JAVA_VERSION setup complete."
 | Permission denied	Run script as | sudo ./install-java.sh 11 |
 
 ---
+ 
+ | Name          | Email                                |
+| ------------- | ------------------------------------ |
+| Aryan Mishra  | aryan.mishra@mygurukulam.co          |
+
+---
+
+
 ## References
 
  | Name                                                    | Resource                                                             |
@@ -180,11 +188,5 @@ echo "[DONE] Java $JAVA_VERSION setup complete."
  |    update-alternatives Command Manual                  | [Link](https://man7.org/linux/man-pages/man8/update-alternatives.8.html)    |          
  |     Bash Scripting Best Practices                  |  [Link](https://google.github.io/styleguide/shellguide.html)|
 
- ---
- | Name          | Email                                |
-| ------------- | ------------------------------------ |
-| Aryan Mishra  | aryan.mishra@mygurukulam.co          |
-
----
 
 
