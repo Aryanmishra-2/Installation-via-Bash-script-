@@ -183,10 +183,8 @@ echo "[DONE] Java $JAVA_VERSION setup complete."
 
  | Name                                                    | Resource                                                             |
  |---------------------------------------------------------|----------------------------------------------------------------------|
- | OpenJDK Installation on Ubuntu (Official Guide)        | [Link](https://openjdk.org/install/)                                        |
- |   Ubuntu OpenJDK Packages                              | [Link](https://packages.ubuntu.com/search?keywords=openjdk)                 |
- |    update-alternatives Command Manual                  | [Link](https://man7.org/linux/man-pages/man8/update-alternatives.8.html)    |          
- |     Bash Scripting Best Practices                  |  [Link](https://google.github.io/styleguide/shellguide.html)|
+ | OpenJDK Installation on Ubuntu (Official Guide)         | [Link](https://openjdk.org/install/)                                 |       
+ |     Bash Scripting Best Practices                       |  [Link](https://google.github.io/styleguide/shellguide.html)         |
 
 
 
