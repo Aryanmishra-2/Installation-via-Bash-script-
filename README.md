@@ -54,21 +54,24 @@ To provide a **generic, reusable, and automated Bash script** that simplifies th
 
 - Run with appropriate privileges (user in sudoers)
 
+  ---
+
 ## Script Breakdown
+
 ```bash
 #!/bin/bash
 
 # ========== CONFIG ========== #
-JAVA_VERSION=${1:-11}   # Default is Java 11 if not specified
-INSTALL_DIR="/usr/lib/jvm"
-UPDATE_ENV=true
-CLEAN_OLD=false
+JAVA_VERSION=${1:-11}     # Default Java version = 11
+CLEAN_OLD=true           # Set to true to remove older versions
+UPDATE_ENV=true           # Set to true to set JAVA_HOME
 
 # ========== FUNCTIONS ========== #
+
 install_java() {
   echo "[INFO] Installing OpenJDK $JAVA_VERSION..."
 
-  sudo apt update
+  sudo apt update -y
   sudo apt install -y openjdk-${JAVA_VERSION}-jdk
 
   if [[ $? -ne 0 ]]; then
@@ -80,7 +83,7 @@ install_java() {
 }
 
 setup_environment() {
-  JAVA_PATH=$(update-java-alternatives -l | grep "java-${JAVA_VERSION}" | awk '{print $3}')
+  JAVA_PATH=$(find /usr/lib/jvm -maxdepth 1 -type d -name "*java-${JAVA_VERSION}*" | head -n 1)
 
   if [[ -z "$JAVA_PATH" ]]; then
     echo "[ERROR] Could not find JAVA path for version $JAVA_VERSION."
@@ -99,10 +102,10 @@ EOF
 
 cleanup_old_versions() {
   if [[ "$CLEAN_OLD" == true ]]; then
-    echo "[INFO] Removing all other Java versions..."
+    echo "[INFO] Removing older Java versions..."
     installed=$(dpkg -l | grep openjdk | awk '{print $2}' | grep -v "$JAVA_VERSION")
     for pkg in $installed; do
-      sudo apt remove -y $pkg
+      sudo apt remove -y "$pkg"
     done
   fi
 }
@@ -119,12 +122,14 @@ install_java
 
 java -version
 echo "[DONE] Java $JAVA_VERSION setup complete."
+
+---
+
+## Basic Usage
+```bash
+ chmod +x install-java.sh
 ```
 ---
-##  Basic Usage
-```bash
-chmod +x install-java.sh
-```
 ```bash
 ./install-java.sh 17
 ```
