@@ -123,12 +123,15 @@ install_java
 java -version
 echo "[DONE] Java $JAVA_VERSION setup complete."
 
+```
 ---
 
 ## Basic Usage
+
 ```bash
  chmod +x install-java.sh
 ```
+- Grants execute permission
 ---
 ```bash
 ./install-java.sh 17
