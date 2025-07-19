@@ -23,9 +23,7 @@
 ## Introduction
 
 Installing and managing Java environments manually on multiple systems can be time-consuming and error-prone.
-
 This project provides a **lightweight, customizable Bash script** to automate Java installation on Debian/Ubuntu systems. 
-
 To provide a **generic, reusable, and automated Bash script** that simplifies the **installation, configuration, and management** of different Java versions (OpenJDK) on **Linux systems**
 
 ---
